@@ -1,4 +1,4 @@
-
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:favorite_places/screens/places.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +29,7 @@ final theme = ThemeData().copyWith(
 
 void main() {
   runApp(
-      const MyApp(),
+      ProviderScope(child: const MyApp()),
   );
 }
 
